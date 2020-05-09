@@ -32,6 +32,7 @@ obj.pop()
 print(obj.arr)
 
 #Queue implementation Using Array(List) In Python
+
 class Queue: 
 
 	def __init__(self, capacity): 
@@ -46,7 +47,7 @@ class Queue:
 	def isEmpty(self): 
 		return self.size == 0
 
-	def EnQueue(self, item): 
+	def add(self, item): 
 		if self.isFull(): 
 			print("Full") 
 			return
@@ -55,7 +56,7 @@ class Queue:
 		self.size = self.size + 1
 		print(item) 
 
-	def DeQueue(self): 
+	def pop(self): 
 		if self.isEmpty(): 
 			print("Empty") 
 			return
@@ -78,12 +79,12 @@ class Queue:
 
 queue = Queue(10) 
 print("Added items")
-queue.EnQueue(10) 
-queue.EnQueue(20) 
-queue.EnQueue(30) 
-queue.EnQueue(40) 
+queue.add(10) 
+queue.add(20) 
+queue.add(30) 
+queue.add(40) 
 print("Deleted items")
-queue.DeQueue()
+queue.pop()
 
 queue.que_front()
 
