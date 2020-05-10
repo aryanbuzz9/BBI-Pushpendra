@@ -1,5 +1,5 @@
 
 from django.shortcuts import render
 
-def contact(request):
+def basic(request):
     return render(request,'basic.html')
