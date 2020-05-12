@@ -1,10 +1,10 @@
-public class StudentController {
+public class Controller {
    private Student model;
    private View v;
 
-   public StudentController(Student model, StudentView view){
+   public Controller(Student model, View v){
       this.model = model;
-      this.view = view;
+      this.v= v;
    }
 
    public void setname(String name){
@@ -17,6 +17,6 @@ public class StudentController {
 
 
    public void updateView(){				
-      view.printStudentDetails(model.getName());
+      view.studentDetails(model.getName());
    }	
 }
